@@ -9,7 +9,7 @@ const [error, setError] = useState(false)
 
     useEffect(() => {
     setLoading(true)
-    axios.get("http://localhost:9090/api/articles")
+    axios.get("https://nc-news-guvj.onrender.com/api")
     .then((res) => {
         setArticles(res.data.articles)
         console.log(res.data)
