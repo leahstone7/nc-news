@@ -12,7 +12,6 @@ const [error, setError] = useState(false)
     axios.get("https://nc-news-guvj.onrender.com/api/articles")
     .then((res) => {
         setArticles(res.data.articles)
-        console.log(res.data)
     })
     .catch((err) => {
         setError(true)

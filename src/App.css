@@ -40,3 +40,9 @@
 .read-the-docs {
   color: #888;
 }
+
+.comment-card{
+  max-width: 500px;
+  margin: 1rem auto;
+  padding: 1rem;
+}
