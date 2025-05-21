@@ -12,6 +12,7 @@ function ArticleList({articles}){
                  title={article.title}
                  topic={article.topic}
                  author={article.author}
+                 image={article.article_img_url}
                  body={article.body}
                  votes={article.votes}
                  commentCount={article.comment_count}
