@@ -3,14 +3,14 @@ import axios from "axios"
 import { useParams } from "react-router-dom" 
 import CommentList from "./CommentList"
 import VoteButtons from "./VoteButtons"
+import PostComment from "./PostComment"
 
-function SingleArticlePage(){
+function SingleArticlePage({newComment}){
 const {article_id} = useParams()
 const [article, setArticle] = useState(null)
 const [loading, setLoading] = useState(true)
 const [error, setError] = useState(false)
 const [updatedVotes, setUpdatedVotes] = useState(null)
-
 
 useEffect(() => {
     setLoading(true)
@@ -41,6 +41,7 @@ return (
     <p>Votes: {updatedVotes}</p>
     <VoteButtons article_id={article_id} votes={updatedVotes} setVotes={setUpdatedVotes}/>
     <p>Comments: {commentCount}</p>
+    <PostComment article_id={article_id} commentAuthor="cooljmessy"/>
     <CommentList article_id={article_id}/>
     </section>
 )
