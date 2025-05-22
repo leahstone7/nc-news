@@ -6,6 +6,7 @@ function CommentList({article_id}){
 const [comments, setComments] = useState([])
 const [loading, setLoading] = useState(true)
 const [error, setError] = useState(false)
+const user = "cooljmessy"
 
 useEffect(() => {
     setLoading(true)
@@ -21,8 +22,26 @@ useEffect(() => {
     })
 }, [])
 
+function handleDelete(comment_id){
+    setLoading(true)
+    axios.delete(`https://nc-news-guvj.onrender.com/api/comments/${comment_id}`)
+    .then(() => {   
+    alert("Comment deleted")
+    setComments(current => current.filter(comment => comment.comment_id !== comment_id))
+
+})
+    .catch((error) => {
+    alert("Unable to delete comment, please try again")
+    setError(true)
+})
+    .finally(() => {
+    setLoading(false)
+})
+
+}
 if(loading) return <p>Loading...</p>
     if(error) return <p>Something went wrong...</p>
+
 
 return (
    <section className="comment-list">
@@ -35,6 +54,8 @@ return (
             commentCreatedAt={comment.created_at}
             commentVotes={comment.votes}
             article_id={comment.article_id}
+            user={user}
+            handleDelete={handleDelete}
             />
             
         )

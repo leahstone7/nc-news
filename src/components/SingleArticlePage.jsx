@@ -5,7 +5,7 @@ import CommentList from "./CommentList"
 import VoteButtons from "./VoteButtons"
 import PostComment from "./PostComment"
 
-function SingleArticlePage({newComment}){
+function SingleArticlePage({newComment, user}){
 const {article_id} = useParams()
 const [article, setArticle] = useState(null)
 const [loading, setLoading] = useState(true)
@@ -42,8 +42,9 @@ return (
     <VoteButtons article_id={article_id} votes={updatedVotes} setVotes={setUpdatedVotes}/>
     <p>Comments: {commentCount}</p>
     <PostComment article_id={article_id} commentAuthor="cooljmessy"/>
-    <CommentList article_id={article_id}/>
-    </section>
+    <CommentList article_id={article_id} user={"cooljmessy"}/>
+    </section >
+
 )
 }
 
