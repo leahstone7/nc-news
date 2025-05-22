@@ -11,7 +11,6 @@ useEffect(() => {
     setLoading(true)
     axios.get(`https://nc-news-guvj.onrender.com/api/articles/${article_id}/comments`)
     .then((res) => {
-        console.log(res.data)
         setComments(res.data.comments)
     })
     .catch((err) => {
