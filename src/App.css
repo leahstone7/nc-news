@@ -58,3 +58,15 @@
   align-items: center;
   justify-content: center;
 }
+
+.delete-comment-button{
+  display: flex;
+  align-items: center;
+  max-width: 150px;
+}
+
+.delete-comment-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
