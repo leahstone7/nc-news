@@ -3,8 +3,7 @@ import axios from "axios"
 import ArticleList from './ArticleList'
 
 
-function Home(){
-const [articles, setArticles] = useState([])
+function Home({articles, setArticles}){
 const [loading, setLoading] = useState(true)
 const [error, setError] = useState(false)
 
@@ -26,7 +25,9 @@ const [error, setError] = useState(false)
     if(error) return <p>Something went wrong...</p>
 
     return (
+        <>
         <ArticleList articles={articles} />
+        </>
     )
 }
 

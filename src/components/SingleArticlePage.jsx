@@ -10,7 +10,7 @@ const {article_id} = useParams()
 const [article, setArticle] = useState(null)
 const [loading, setLoading] = useState(true)
 const [error, setError] = useState(false)
-const [updatedVotes, setUpdatedVotes] = useState(null)
+const [updatedVotes, setUpdatedVotes] = useState(0)
 
 useEffect(() => {
     setLoading(true)
