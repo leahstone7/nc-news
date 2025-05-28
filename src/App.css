@@ -70,3 +70,36 @@
   align-items: center;
   justify-content: center;
 }
+
+.apply-filter-button{
+  margin-left: 1rem;
+  padding: 0.3rem 0.3rem;
+  max-width: 150px;
+}
+
+.header-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #b3e1cb;
+  color: rgb(255, 255, 255);
+  padding: 1.2rem 2rem;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.article-card:hover {
+  background-color: #b3e1cb;;
+}
+
+.single-article{
+  max-width: 1000px;
+  margin: 2rem auto;
+  font-family: Arial, sans-serif;
+}
+
+.single-article p {
+  line-height: 2.0;
+  color: #0a0a0a;
+}
+
+

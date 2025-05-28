@@ -35,8 +35,8 @@ const {title, topic, author, body, votes, commentCount} = article
 return (
     <section className="single-article"> 
     <h2 className="h2">{title}</h2>
-    <p>Topic: {topic} By: {author}</p>
     <img src={article.article_img_url} alt='image of article'/>
+    <p>Topic: "{topic}"" By: "{author}"</p>
     <p>{body}</p>
     <p>Votes: {updatedVotes}</p>
     <VoteButtons article_id={article_id} votes={updatedVotes} setVotes={setUpdatedVotes}/>

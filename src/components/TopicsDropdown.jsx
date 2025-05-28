@@ -36,7 +36,7 @@ if(error) return <p>Something went wrong...</p>
 return (
     <div>
         <select onChange={handleChange}>
-        <option>Select a topic...</option>
+        <option >Select a topic...</option>
         <option>coding</option>
         <option>football</option>
         <option>cooking</option>

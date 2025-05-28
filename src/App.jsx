@@ -6,6 +6,7 @@ import { Route, Routes} from "react-router-dom"
 import SingleArticlePage from './components/SingleArticlePage'
 import TopicsDropdown from './components/TopicsDropdown'
 import TopicsPages from './components/TopicsPages'
+import Footer from './components/Footer'
 
 function App() {
   const [articles, setArticles] = useState([])
@@ -19,6 +20,7 @@ function App() {
       <Route path="/articles/:article_id" element={<SingleArticlePage />}/>
       <Route path="/topics/:topic" element={<TopicsPages articles={articles}/>}></Route>
     </Routes>
+    <Footer />
     </>
   )
 }

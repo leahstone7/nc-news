@@ -6,11 +6,11 @@ return (
     <Link to={`/articles/${article_id}`}>
     <Card className="article-card"> 
     <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className="article-title">{title}</Card.Title>
         <Card.Subtitle>Topic: {topic} By: {author}</Card.Subtitle>
-        <Card.Img variant='top' src={image} alt='image of article'/>
-        <Card.Text>{body}</Card.Text>
-        <Card.Text>Votes: {votes} Comments: {commentCount}</Card.Text>
+        <Card.Img className="article-img" variant='top' src={image} alt='image of article'/>
+        <Card.Text className="article-body-text">{body}</Card.Text>
+        <Card.Text className="article-footer">Votes: {votes} Comments: {commentCount}</Card.Text>
     </Card.Body>
     </Card>
     </Link>
