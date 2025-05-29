@@ -1,12 +1,42 @@
-# React + Vite
+**NC News – Front End**
+Deployed Version: https://ncnewsleah.netlify.app/
+Backend repo: https://github.com/leahstone7/nc-news-backend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+NC News is a news app in which users can read and filter articles, post and delete comments, and up/down-vote articles they enjoy (or not). This front-end piece is built with React and interacts with a custom RESTful API. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Minimum version of node to run locally: v23.8.0
 
-## Expanding the ESLint configuration
+How to run locally:
+1. git clone https://github.com/leahstone7/nc-news.git
+2. cd into ncnews
+3. run 'npm install'
+4. run 'npm run dev'
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Features:
+Browse and filter articles by topic
+
+View individual articles and their associated comments
+
+Vote on articles and comments (up and down)
+
+Sort articles by date and votes
+
+Post and delete comments
+
+Tech Stack
+React
+
+JavaScript
+
+HTML
+
+Axios
+
+React Router
+
+CSS
+
+
+This portfolio project was created as part of a Digital Skills Bootcamp in Software Engineering provided by [Northcoders](https://northcoders.com/)
+
