@@ -24,7 +24,7 @@ Sort articles by date and votes
 
 Post and delete comments
 
-Tech Stack
+Tech Stack:
 React
 
 JavaScript
